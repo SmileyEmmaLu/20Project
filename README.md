@@ -1,8 +1,7 @@
 # 20Project
 
-##Using Canvas API:
+## Using Canvas API:
 URL: https://canvas.instructure.com/doc/api/courses.html
-
 
   This is the link to the Canvas API page, this can act as a guide when implementing 
 Postman:

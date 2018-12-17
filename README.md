@@ -1,6 +1,7 @@
 # 20Project
 ## File Explanation
 Everything out of the src is either gradle setup or part of the initial set up. I did not code anything in them. 
+
 The file in the src is called CalendarQuickStart.java. Inside is the progress that I have made with the Google Calendar API. Anyone that pulls from this repository is able to have a set up code that they could make further developments on.
 
 ## Using Canvas API:

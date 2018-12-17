@@ -14,8 +14,10 @@ URL: https://canvas.instructure.com/doc/api/courses.html
   2. Right under your "Creat Calendar Event", the default choice should be GET. Click the dropdown menu and change it to **POST**. 
   3. In the "Enter request URL" field right next to POST, first paste https://kentdenver.instructure.com and then go to the Canvas API          link above and scrol down to **Create a calendar event** under **Calendar Events**. You will see **scope url**, copy and paste the        section after **POST|** on to the end of .com
   2. Click the subtab "Authorization" and under "Type" choose "Bearer Token". You won't need to do anything with it becuase Postman will        automatically fill in the Authroization for you.
-  3. Click on the **Header**
-  3. Go back to Canvas API and copy the required parameter into the **Key
-  4. 
+  3. Click on the **Header** subtab and under Key, type `Content_Type` and assign Values to `application/x-www-form-urlencoded`
+  4. Now go to text subtab, Body, and in the first line click "application/x-www-form-urlencoded"
+  3. Go back to Canvas API and copy the required parameter into the **Key**. The only required perameter is `calendar_event[context_code]`      and the corresonding Value is the access token to your Canvas Calender. Every student has their unique ID, so you may ask the teacher      for yours. 
+  4. You may add more parameters to your body, but it is not required. Parameters like "title" and "star_at", "end_at" are recommended. 
+  5. For the Values of "star_at" and "end_at", the date and time needs to follow a specific format (yyyy-mm-ddThh:mm:ss). And note that it      is military time. 
   
   
